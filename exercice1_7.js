@@ -9,3 +9,9 @@ console.log(result);
 
 result += 5;
 console.log(result);
+
+result *= 50;
+console.log(result);
+
+dob = result - dob;
+console.log(dob);
