@@ -10,7 +10,6 @@ function saisir() {
 
 function calculSurface(largeur, long) {
 
-
     return largeur * long;
 }
 
