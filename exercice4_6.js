@@ -6,7 +6,7 @@ function saisir() {
 
 function factorial(n) {
     if (n < 0) {
-        console.log("votre nombre n'est pas plus grand ou = à 0");
+        return 0;
     } else if (n == 0) {
         return 1;
 
