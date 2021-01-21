@@ -14,9 +14,16 @@ class Rectangle {
     }
 
 }
+let rect1 = new Rectangle(1, 2, 3, 2);
+let rect2 = new Rectangle();
+for (let i = 0; i < 10; i++) {
+    rect2 = new Rectangle(
+        Math.random() * (10 - 1) + 1,
+        Math.random() * (10 - 1) + 1,
+        Math.random() * (10 - 1) + 1,
+        Math.random() * (10 - 1) + 1
+    );
+    console.log(rect2);
+}
 
-let rect1 = new Rectangle(1, 2, 2, 2);
-let rect2 = new Rectangle(3, 2, 1, 3);
-
-
-console.log(rect1.collides(rect2));
+console.log(rect1);

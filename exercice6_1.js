@@ -16,5 +16,6 @@ class Circle {
 
 let myobject = new Circle(1, 2, 3);
 console.log(myobject);
+console.log(myobject.surface);
 myobject.move(5, 4);
 console.log(myobject);
