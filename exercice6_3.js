@@ -12,17 +12,22 @@ class Rectangle {
             return false;
         }
     }
+    afficher() {
+        for (let i = 0; i < 10; i++) {
+            rect2 = new Rectangle(
+                Math.floor(Math.random() * (10 - 1) + 1),
+                Math.floor(Math.random() * (10 - 1) + 1),
+                Math.floor(Math.random() * (10 - 1) + 1),
+                Math.floor(Math.random() * (10 - 1) + 1)
+            );
+            console.log(rect2);
+            console.log(rect1.collides(rect2));
+        }
+        return rect2;
+    }
 
 }
 let rect1 = new Rectangle(1, 2, 3, 2);
 let rect2 = new Rectangle();
-for (let i = 0; i < 10; i++) {
-    rect2 = new Rectangle(
-        Math.floor(Math.random() * (10 - 1) + 1),
-        Math.floor(Math.random() * (10 - 1) + 1),
-        Math.floor(Math.random() * (10 - 1) + 1),
-        Math.floor(Math.random() * (10 - 1) + 1)
-    );
-    console.log(rect2);
-    console.log(rect1.collides(rect2));
-}
+
+console.log(rect1.afficher());
