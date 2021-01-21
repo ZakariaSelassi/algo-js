@@ -8,7 +8,7 @@ Oui, vous devrez rechercher quels sont les nombres de Fibonacci. */
 let n;
 
 do {
-    n = Number(readlineSync.question("Enter a number : "));
+    n = Number(readlineSync.question("Enter a positive number : "));
     if (n < 0) {
 
         console.log("Your number isn't positive ! check again..");
@@ -20,3 +20,11 @@ do {
 
 } while (n < 0 || n == 0);
 console.log("Your number is : " + n);
+
+for (let i = 0; i < n; i++) {
+    if (n % i == 0) {
+        if (i != 1) {
+            console.log(i);
+        }
+    }
+}
