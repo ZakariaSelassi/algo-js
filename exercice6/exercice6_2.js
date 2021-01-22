@@ -15,8 +15,8 @@ class Rectangle {
 
 }
 
-let rect1 = new Rectangle(1, 2, 2, 2);
-let rect2 = new Rectangle(3, 2, 1, 3);
+let rect1 = new Rectangle(1, 10, 5, 7);
+let rect2 = new Rectangle(10, 10, 20, 20);
 
 
 console.log(rect1.collides(rect2));

@@ -27,7 +27,7 @@ class Rectangle {
     }
 
 }
-let rect1 = new Rectangle(1, 2, 3, 2);
+let rect1 = new Rectangle(1, 10, 5, 7);
 let rect2 = new Rectangle();
 
 console.log(rect1.afficher());
